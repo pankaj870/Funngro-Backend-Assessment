@@ -1,0 +1,16 @@
+{
+  "name": "funngro-backend-assessment",
+  "version": "1.0.0",
+  "description": "Funngro Backend Engineering Assessment (Node.js + MongoDB) - Pankaj Mahajan",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node --env-file-if-exists=.env src/server.js",
+    "setup-indexes": "node src/db/indexes.js",
+    "seed": "node src/scripts/seed.js",
+    "verify": "node src/scripts/verify.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "mongodb": "^6.15.0"
+  }
+}
